@@ -1,0 +1,345 @@
+%\documentclass[12pt]{article}
+\documentclass[12pt, letterpaper]{book}
+\title{CHEM 121: Nomenclature practice}
+\nonstopmode
+\usepackage{graphicx} % Required for including pictures
+\usepackage[figurename=Figure]{caption}
+\usepackage{float}    % For tables and other floats
+\usepackage{verbatim} % For comments and other
+\usepackage{amsmath}  % For math
+\usepackage{amssymb}  % For more math
+\usepackage{fullpage} % Set margins and place page numbers at bottom center
+\usepackage{paralist} % paragraph spacing
+\usepackage{listings} % For source code
+\usepackage{subfig}   % For subfigures
+%\usepackage{physics}  % for simplified dv, and 
+\usepackage{wrapfig}
+\usepackage{enumitem} % useful for itemization
+\usepackage{siunitx}  % standardization of si units
+
+\usepackage{tikz,bm} % Useful for drawing plots
+%\usepackage{tikz-3dplot}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage[table]{xcolor}
+%Settings parameters for how tables will be formatted
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{20pt}
+%Package to help with formatting chemical formulae
+\usepackage[version=4]{mhchem}
+
+\usepackage{fontspec}
+
+\usepackage{titlesec}
+
+\usepackage[paperheight=280mm, paperwidth=216mm,
+nomarginpar,% We don't want any margin paragraphs
+textwidth=175mm,% Set \textwidth to 10cm
+headheight=8mm]% Set \headheight to 10mm%]% Set \headheight to 10mm
+{geometry}
+
+\usepackage{fancyhdr}
+
+\titleformat{\section}
+  {\center\normalfont\normalsize\bfseries}{}{2em}{}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{}{1em}{}
+\titleformat{\paragraph}
+{\normalfont\normalsize\mdseries}{}{0em}{}
+
+\usepackage[skip=12pt plus1pt, indent=0pt]{parskip}
+
+
+\begin{document}
+
+% Set the page style to "fancy"...
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyhead[R]{\thepage}
+\fancyfoot{} % clear all footer fields
+\renewcommand{\footrulewidth}{0.1pt}
+\fancyfoot[L]{Truman Science Center}
+\fancyfoot[C]{Key: Nomenclature Practice}
+\fancyfoot[R]{8 April 2026}
+
+\setmainfont{Arial}
+\captionsetup{belowskip=1pt}
+
+\setmainfont{Arial}
+\captionsetup{belowskip=1pt}
+
+
+\begin{flushleft}
+	\vspace{.3cm}
+	{\textbf { \large Key: Nomenclature Practice}}
+\end{flushleft}
+\vspace{1mm}
+	\hrule
+\section{{\normalsize Convert the chemical names below to chemical formulas.}} 
+
+
+\flushleft{\textbf{a) Carbon Monoxide}}
+
+Carbon and Oxygen are both nonmetals, so the number of each comes from prefixes. The prefix is omitted for Carbon, so we assume there is only 1 carbon. The mono- prefix for Oxide means 1 Oxygen is present. 
+
+\textit{The chemical formula is \ce{CO}}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{b) Phosphorous Pentoxide}}
+
+Phosphorous and Oxygen are both nonmetals, so the number of each comes from prefixes. The prefix is omitted for Phosphorous, so we assume there is only 1 Phosphorous present. The pent- prefix for Oxide means there are 5 Oxygens present. 
+
+\textit{The chemical formula is \ce{PO5}}
+
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{c) Magnesium Nitride}}
+
+This compound is a nonmetal (Nitrogen) with a metal (Magnesium), so the number of each will come from neutralizing charges. 
+
+The ions present are \ce{Mg^2+} and \ce{N^3-}. The lowest common multiple of 2 and 3 is 6. Three \ce{Mg^2+} ions are needed for a 6+ charge, and two \ce{N^3-} are needed for a 6- charge. 
+
+
+\textit{The chemical formula is \ce{Mg3N2}}
+
+As a shortcut, notice that there are 3 \ce{Mg^2+} which is the size of the charge on Nitride, and two \ce{N^3-} which is the size of the charge on Magnesium. This pattern typically works, but you should check the end results. 
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{d) Ammonium Phosphate}}
+
+This is an ionic compound made of two different polyatomic ions. Ammonium is \ce{NH4^+}, and Phosphate is \ce{PO4^3-}. 3 Ammoniums are needed to neutralize the charge of phosphate. Make sure to use parentheses to show there are multiple ammoniums present!
+
+\textit{The chemical formula is \ce{(NH4)3PO4}.}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{e) Aluminum Sulfite}}
+
+This compound is made of a metal and a polyatomic ion. Aluminum always forms a 3+ ion, and Sulfite forms a 2- ion. 
+
+The lowest common multiple of 2 and 3 is 6. Two \ce{Al^3+} ions are needed for a 6+ charge, and three \ce{SO3^2-} are needed for a 6- charge. 
+
+
+\textit{The chemical formula is \ce{Al2(SO3)3}}
+
+As a shortcut, notice that there are 3 \ce{SO3^2-} which is the size of the charge on aluminum, and two \ce{Al^3+} which is the size of the charge on Sulfite. This pattern typically works, but you should check the end results.
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{f) Sodium Permanganate}}
+
+This compound is made a metal and a polyatomic ion. Sodium forms a +1 ion. Permanganate has a 1- charge. Only one of each is needed to neutralize the charges. 
+
+\textit{The chemical formula is \ce{NaMgO4}}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{g) Carbon Tetrachloride}}
+
+This molecule is made of two nonmetals, so the number of atoms of each element is given in the prefixes in the name. Carbon has no prefix, so we assume there is one Carbon. Tetra- means there are four chlorines.
+
+\textit{The chemical formula is \ce{CCl4}}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{h) Sodium Nitrate}}
+
+This compound is made a metal with a polyatomic ion. Sodium forms a 1+ ion, and nitrate forms a 1- ion, so one of each is needed to neutralize the charges. 
+
+\textit{The chemical formula is \ce{NaNO3}}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{i) Titanium (IV) Oxide}}
+This compound is made of a transition metal and a nonmetal. The (IV) after titanium tells us the charge on Titanium is 4+. Oxide forms a 2- ion, so two oxide ions are needed to neutralize the titanium cation. 
+
+\textit{The chemical formula is \ce{TiO2}}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{}{j) Magnesium Perchlorate}}
+
+This compound is made a metal with a polyatomic ion. Magnesium forms a 2+ ion, and perchlorate forms a 1- ion, so two perchlorate ions are needed to neutralize the charge of Magnesium.  
+
+\textit{The chemical formula is \ce{Mg(ClO4)2}}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{k) Iron (III) Cyanide}}
+
+This compound is made of a transition metal and a polyatomic ion. The (III) after iron tells us the charge on iron is 3+. Cyanide forms a 1- ion, so three cyanide ions are needed to neutralize the iron cation. 
+
+\textit{The chemical formula is \ce{Fe(CN)3}}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{}{l) Aluminum Nitrate}}
+
+This compound is made a metal with a polyatomic ion. Aluminum forms a 3+ ion, and nitate forms a 1- ion, so three nitrate ions are needed to neutralize the charge of aluminum.  
+
+\textit{The chemical formula is \ce{Al(NO3)3}}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{m) Magnesium Iodide}}
+
+This compound is a nonmetal with a metal. Magnesium forms 2+ ions; Iodine forms 1- ions, so so Iodide ions are needed to neutralize the charge from Magnesium. 
+
+\textit{The chemical formula is \ce{MgI2}}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{n) Lead (II) Sulfate}}
+
+This compound is made of a transition metal and a polyatomic ion. The (II) after lead tells us the charge on lead is 2+. Sulfate has a 2- charge, so one of each will neutralize the charges 
+
+\textit{The chemical formula is \ce{PbSO4}}
+\vspace{1mm}
+\hrule
+
+\section{{\normalsize Name the compounds below.}} 
+
+\flushleft{\textbf{a) \ce{CO_2}}}
+
+Carbon and Oxygen are both nonmetals. They are given prefixes corresponding to the number of each present. Carbon is less electronegative so it is named first. There is only one Carbon, so the mono- prefix is dropped because it is named first. There are two Oxygens. We will use the prefix di- and the suffix -ide since Oxygen is the more electronegative element. 
+
+\textit{This compound is named Carbon Dioxide}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{b) \ce{OF2}}}
+
+Carbon and Oxygen are both nonmetals. They are given prefixes corresponding to the number of each present. Oxygen is less electronegative so it is named first. There is only one Oxygen, so the mono- prefix is dropped because it is named first. There are two Flourines. We will use the prefix di- and the suffix -ide since Flourine is the more electronegative element. 
+
+\textit{This compound is named Oxygen Diflouride}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{c) \ce{P2O5}}}
+
+Phophorous and Oxygen are both nonmetals. They are given prefixes corresponding to the number of each present. Phosphorous is less electronegative so it is named first. There are two phosphorous present, so it will be given the di- prefix. There are five Oxygens. We will use the prefix pent- and the suffix -ide since Oxygen is the more electronegative element. 
+
+\textit{This compound is named Diphophorous Pentoxide}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{d) \ce{Al2(SO3)3}}}
+
+Aluminum is a metal, and sulfite is a polyatomic ion. The number of each is assumed based on the charges of each member, so no number prefixes are added in the name. 
+
+\textit{This compound is named Aluminum Sulfite}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{e) \ce{LiBr}}}
+
+Lithium is a metal, and Bromine is a nonmetal. The number of each is assumed based on the charges of each member, so no number prefixes are added in the name. Bromine is given the -ide ending since it is more electronegative. 
+
+\textit{This compound is named Lithium Bromide}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{f) \ce{CaCO3}}}
+
+Calcium is a metal, and carbonate is a polyatomic ion. The number of each is assumed based on the charges of each member, so no number prefixes are added in the name. 
+
+\textit{This compound is named Calcium Carbonate}
+\hrule
+
+\flushleft{\textbf{g) \ce{Ag2CrO4}}}
+
+Silver is a transition metal, and sulfite is a polyatomic ion. Silver only makes 1+ ions, so the oxidation state does not need to be specified in the name. The number of each is assumed based on the charges of each member, so no number prefixes are added in the name. 
+
+\textit{This compound is named Silver Chromate}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{h) \ce{(NH4)3PO4}}}
+
+Ammonium and Phosphate are both polyatomic ions. The number of each is assumed based on the charges of each member, so no number prefixes are added in the name. Ammonium is named first because it is a cation. 
+
+\textit{This compound is named Ammonium Phosphate}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{i) \ce{KCLO4}}}
+
+Potassium is a metal, and Perchlorate is a polyatomic ion. The number of each is assumed based on the charges of each member, so no number prefixes are added in the name. 
+
+\textit{This compound is named Potassium Perchlorate}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{j) \ce{NaMnO4}}}
+
+Sodium is a metal, and Permanganate is a polyatomic ion. The number of each is assumed based on the charges of each member, so no number prefixes are added in the name. 
+
+\textit{This compound is named Sodium Permanganate}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{k) \ce{Al(OH)3}}}
+
+Aluminum is a metal, and hydroxide is a polyatomic ion. The number of each is assumed based on the charges of each member, so no number prefixes are added in the name. 
+
+\textit{This compound is named Aluminum Hydroxide}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{l) \ce{AuCl3}}}
+
+Gold is a transition metal, and Chloride is a nonmetal. Since the oxidation state of gold can vary between compounds, we need to determine the oxidation state, so we can specify it in the name. 
+
+Each chloride has a 1- charge, so the oxidation state of gold must neutralize this charge. We can use a little algebra to find the charge of gold. 
+
+$3(-1) + x = 0$
+
+Add three to each side to isolate x. 
+
+$x = 3$ 
+
+So the oxidation state of Gold is 3+. \textit{This compound is named Gold (III) Chloride}
+\vspace{1mm}
+\hrule
+
+\flushleft{\textbf{m) \ce{TiO2}}}
+
+Titanium is a transition metal, and Oxygen is a nonmetal. Since the oxidation state of Titanium can vary between compounds, we need to determine the oxidation state, so we can specify it in the name. 
+
+Each Oxide has a 2- charge, so the oxidation state of Titanium must neutralize this charge. We can use a little algebra to find the charge of Titanium. 
+
+$2(-2) + x = 0$
+
+Add four to each side to isolate x. 
+
+$x = 4$ 
+
+So the oxidation state of Titanium is 4+. \textit{This compound is named Titanium (IV) Oxide}
+\vspace{1mm}
+\hrule
+
+
+\flushleft{\textbf{n) \ce{Pb3(PO4)4}}}
+
+Lead is a transition metal, and Phosphate is a polyatomic ion. Since the oxidation state of Lead can vary between compounds, we need to determine the oxidation state, so we can specify it in the name. 
+
+Each Phosphate has a 3- charge, so the oxidation state of Lead must neutralize this charge. We can use a little algebra to find the charge of Lead. 
+
+$4(-4) + 3x = 0$
+
+Add 12 to each side to isolate x. 
+
+$3x = 12$ 
+
+Divide by 3 to have only x on the left side.
+
+$x=4$ 
+
+So the oxidation state of Lead is 4+. \textit{This compound is named Lead (IV) Phosphate}
+\vspace{1mm}
+\hrule
+\end{document}
