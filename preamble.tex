@@ -1,19 +1,12 @@
-%%% Title
-\title{CHEM 121: Calorimetry}
-\nonstopmode
-%%%
-%%
 %%%General
 \usepackage{verbatim} % For comments and other
-\usepackage{tagpdf}
-\tagpdfsetup{activate-all}
-\tagpdfsetup{math/alt/use}
 \usepackage{framed}
 %%%
 %%
 %%% Subject Specific
 %% Math
 \usepackage{amsmath}  % For math
+\allowdisplaybreaks % Allows page breaks inside long math blocks
 \usepackage{amssymb}  % For more math
 \usepackage{siunitx}  % standardization of si units
 \DeclareSIUnit\Calorie{Cal}
@@ -79,9 +72,7 @@ bmargin = 25.4mm,
 headheight = 10mm]% Set \headheight to 10mm%]% Set \headheight to 10mm
 {geometry}
 %% Setting up titles for sections and subsections. Setting up paragraph formatting
-\newcommand{\styleTitle}[1] {
-	\vspace{.3cm}
-    \begin{flushleft}
+\newcommand{\styleTitle}[1] {\begin{flushleft}
        \textbf{\Large{#1}}
     \end{flushleft}
 \vspace{1mm}
